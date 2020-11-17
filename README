@@ -1,0 +1,14 @@
+compile the server script - 'g++ server.cpp -lpthread -o server'
+compile the client script - 'g++ client.cpp -lpthread -o client'
+
+Open terminal and move to appropriate directory and type the following commands- 
+1. './server 8001'
+2. open new tab or window of terminal and type - './client localhost 8001'
+(Repeat step 2 several number of times so that we have mutilple clients)
+3. Type 0 and press enter to get list of connected clients.(whenever you need to confirm that specific client is connected or not, not necessary everytime)
+4. Type -1 and press enter to terminate connection.
+5. Type one of the client number in any client's prompt and then click enter. Type the message and click enter in the same prompt. Message will be sent to requested client.
+6. Repeat step 5 with different client number and from different client prompt. You will see message popping up in requested terminal.
+
+Step 5 is used for the reciever number and message and that is the main part.
+Add on - If you want to terminate client gracefully press -1, otherwise you can also 'Ctrl+C' it.
